@@ -8,4 +8,4 @@ eureka:
     serviceUrl:
       defaultZone: ${EUREKA_URI:https://stormy-citadel-28405.herokuapp.com:8761/eureka}
   instance:
-    preferIpAddress: true
+    preferIpAddress: false
