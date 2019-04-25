@@ -1,4 +1,12 @@
 -------------------------------------------------------------------------------
 Test set: hello.EurekaClientApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 34.408 s - in hello.EurekaClientApplicationTests
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 25.868 s <<< FAILURE! - in hello.EurekaClientApplicationTests
+hello.EurekaClientApplicationTests  Time elapsed: 25.866 s  <<< ERROR!
+org.springframework.boot.web.embedded.tomcat.ConnectorStartFailedException: Connector configured to listen on port 8761 failed to start
+	at hello.EurekaClientApplicationTests.startEureka(EurekaClientApplicationTests.java:35)
+
+hello.EurekaClientApplicationTests  Time elapsed: 25.867 s  <<< ERROR!
+java.lang.NullPointerException
+	at hello.EurekaClientApplicationTests.closeEureka(EurekaClientApplicationTests.java:42)
+
