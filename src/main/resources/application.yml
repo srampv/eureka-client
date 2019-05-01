@@ -1,6 +1,11 @@
 spring:
   application:
     name: spring-cloud-eureka-client
+  datasource:
+    url: jdbc:h2:mem:testdb;INIT=CREATE SCHEMA IF NOT EXISTS DBO
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:    
 server:
   port: 8080
 eureka:

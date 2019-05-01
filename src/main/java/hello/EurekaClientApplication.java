@@ -42,6 +42,6 @@ class ServiceInstanceRestController {
             ps.println(data);
             ps.close();
         }
-        return "Hello from Eureka Client";
+        return "<----POSTED--->"+data;
     }
 }
